@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task4</title>
+
+
+  <style>
+    .newS {
+      background-color:pink;
+      padding: 18px;
+      border-radius: 6px;
+    }
+
+    .newP {
+      color: blue; 
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="Div">
+    <img src="MilkyWay.jpg" alt="111">
+    <h2 id="Heading">The Milky Way</h2>
+    <p id="Paragraph">The Milky Way is our home galaxy, a vast and spiral-shaped system of stars, gas, and dust. It stretches across the night sky, containing an estimated 100 to 400 billion stars. Our solar system resides in one of its spiral arms, called the Orion Arm, about 27,000 light-years from the galactic center. The Milky Way is just one of billions of galaxies in the universe, yet it is uniquely special to us. It's the birthplace of countless stars and planetary systems, including our very own. The galaxy is constantly in motion, with stars and other objects orbiting the galactic center. Studying the Milky Way gives us valuable insights into the broader universe, helping scientists understand the formation and evolution of galaxies over billions of years.</p>
+  </div>
+
+  <button onclick="change()">Click For Change</button>
+  <button onclick="reset()">Reset to Original</button>
+
+  <script>
+    function change() {
+      document.getElementById("Paragraph").classList.add("newP");
+      document.getElementById("Div").classList.add("newS");
+      document.getElementById("Heading").textContent = "Where all of it started !";
+    }
+
+    function reset() {
+      document.getElementById("Paragraph").classList.remove("newP");
+      document.getElementById("Div").classList.remove("newS");
+      document.getElementById("Heading").textContent = "The Milky Way";
+    }
+  </script>
+
+</body>
+</html>
